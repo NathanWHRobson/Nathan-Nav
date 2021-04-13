@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Organized Chaos</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="menu_account">Account</string>
+    <string name="menu_category">Categories</string>
+    <string name="menu_archive">Archive</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_filter">Filter</string>
+    <string name="filterTaskTitle">Title</string>
+    <string name="filterTaskDescription">Description</string>
+    <string name="filterbtn">Filter</string>
+    <string name="filterTaskCategory">Category</string>
+    <string name="monday">M</string>
+    <string name="tuesdayAndThursday">T</string>
+    <string name="wednesday">W</string>
+    <string name="friday">F</string>
+    <string name="saturdayAndSunday">S</string>
+    <string name="filterTaskRepeat">Pick Days</string>
+    <string name="filterTaskDateTime">Pick Deadline</string>
+    <string name="filterTaskHeader">Filter Tasks:</string>
+    <string name="completecheck">Complete Task</string>
+
+    <string name="addNewTaskHeader">Add New Task:</string>
+    <string name="newTaskTitle">Title</string>
+    <string name="newTaskDesc">Description</string>
+    <string name="newTaskDateTime">Set Deadline</string>
+    <string name="newTaskRepeat">Set Task to Repeat</string>
+    <string name="newTaskCategory">Category</string>
+    <string name="catGen">General</string>
+    <string name="addBtn">Add</string>
+    <string name="existing_categories">Existing Categories</string>
+    <string name="add_new_cat">Add New Category</string>
+    <string name="add_category">Add Category</string>
+
+    <string name="channel_name">OrganizedChaos</string>
+    <string name="channel_description">If a reminder is set for a task</string>
+    <string name="editBtn">Edit</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

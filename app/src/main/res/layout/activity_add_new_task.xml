@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/isabelline">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30sp"
+            android:paddingTop="10dp"
+            android:paddingRight="30sp">
+
+            <TextView
+                android:id="@+id/addNewTaskLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/addNewTaskHeader"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30sp"
+            android:paddingRight="30sp"
+            android:paddingTop="10sp">
+            <TextView
+                android:id="@+id/titleLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/newTaskTitle"
+                android:textSize="18sp"
+                android:padding="10sp"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/editTextNewTaskTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints="Title of New Task"
+                android:ems="10"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:background="@color/mossgreen"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30sp"
+            android:paddingRight="30sp"
+            android:paddingTop="10sp">
+
+            <Switch
+                android:id="@+id/switchSetDateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:padding="10sp"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/setDateTimeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="@string/newTaskDateTime"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <DatePicker
+                android:id="@+id/calendarViewDeadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:background="@color/mossgreen"/>
+            <TimePicker
+                android:id="@+id/timePickerDeadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:timePickerMode="spinner"
+                android:background="@color/mossgreen"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30sp"
+            android:paddingRight="30sp"
+            android:paddingTop="10sp">
+            <Switch
+                android:id="@+id/switchRepeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:padding="10sp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:button="@color/mossgreen"/>
+
+            <TextView
+                android:id="@+id/repeatLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="@string/newTaskRepeat"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@color/mossgreen">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/daysOfWeek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/Sunday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/saturdayAndSunday"
+                    android:checkable="true"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/Monday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/monday"
+                    android:checkable="true"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/Tuesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tuesdayAndThursday"
+                    android:checkable="true"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/Wednesday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wednesday"
+                    android:checkable="true"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/Thursday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tuesdayAndThursday"
+                    android:checkable="true"/>
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/Friday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/friday"
+                    android:checkable="true"/>
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/Saturday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/saturdayAndSunday"
+                    android:checkable="true"/>
+            </com.google.android.material.chip.ChipGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30sp"
+            android:paddingRight="30sp"
+            android:paddingTop="10sp">
+            <TextView
+                android:id="@+id/categoryLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:textSize="18sp"
+                android:text="@string/newTaskCategory"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="30sp"
+            android:paddingRight="30sp"
+            android:paddingTop="10sp">
+
+                <ListView
+                    android:id="@+id/checkCatList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"></ListView>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="30sp"
+            android:paddingRight="30sp"
+            android:paddingTop="10sp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnNewTaskSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/addBtn" />
+            <Button
+                android:id="@+id/btnEditTaskSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/editBtn" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

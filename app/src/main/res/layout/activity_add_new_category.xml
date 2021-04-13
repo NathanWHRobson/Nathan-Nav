@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/isabelline">
+
+    <TextView
+        android:id="@+id/textCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/existing_categories"
+        android:textSize="32sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <ListView
+        android:id="@+id/catList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:drawSelectorOnTop="false"
+        android:layout_marginTop="10dp"
+        android:divider="@null"
+        android:dividerHeight="0dp" />
+
+    <Button
+        android:id="@+id/btnNewCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_cat"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@android:drawable/ic_menu_add"
+        android:drawableTint="@color/black"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <FrameLayout
+        android:id="@+id/newCatContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+</LinearLayout>
